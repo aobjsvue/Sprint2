@@ -5,43 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bookmark</title>
     <link href="sass/nivel1.css" rel="stylesheet">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white pt-3">
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./img/logo-bookmark.svg" alt="Bookmark Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="./img/icon-hamburger.svg" alt="Navigation Icon">
+                </button>
+                <div id="navbarToggler" class="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="#"><img src="./img/logo-bookmark-reversed.svg" alt="Bookmark Logo"></a>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><img src="./img/icon-close.svg" alt="Navigation Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-end">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="#">FEATURES</a>
+                            <a class="nav-link" href="#">PRICING</a>
+                            <a class="nav-link" href="#">CONTACT</a>
+                            <button type="button" class="btn btn-secondary">LOGIN</button>
+                        </div>
+                        <div class="social">
+                            <a href="#"><img src="./img/icon-facebook.svg" alt="Facebook Icon"></a>
+                            <a href="#"><img src="./img/icon-twitter.svg" alt="Twitter Icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="container">
-            <a class="navbar-brand active" aria-current="page" href="#"><img src="./img/logo-bookmark.svg"
-                    alt="Bookmark Logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-                <div class="navbar-nav">
-                    <a class="nav-link me-3" href="#">FEATURES</a>
-                    <a class="nav-link" href="#">PRICING</a>
-                    <a class="nav-link mx-3" href="#">CONTACT</a>
-                    <button type="button" class="btn btn-secondary ms-1">LOGIN</button>
+            <div class="row">
+                <div class="col">
+                    <h1>A Simple Bookmark Manager</h1>
+                    <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                    <button type="button" class="btn btn-primary">Get it on Chrome</button>
+                    <button type="button" class="btn btn-light">Get it on Firefox</button>
+                </div>
+                <div class="col">
+                    <img src="./img/illustration-hero.svg" alt="Hero Illustration">
                 </div>
             </div>
         </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>A Simple Bookmark Manager</h1>
-                <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-                <button type="button" class="btn btn-primary">Get it on Chrome</button>
-                <button type="button" class="btn btn-light">Get it on Firefox</button>
-            </div>
-            <div class="col">
-                <img src="./img/illustration-hero.svg" alt="Hero Illustration">
-            </div>
-        </div>
-    </div>
+    </header>
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-4 text-center">
@@ -230,5 +240,8 @@
             </nav>
         </div>
     </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
 </body>
 </html>
