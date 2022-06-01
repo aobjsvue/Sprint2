@@ -192,11 +192,11 @@ main {
             }
 
             @include media-breakpoint-up(md) {
-                .ht-card:nth-child(1) {
-                    top: -2.5em;
+                .ht-card:nth-child(2) {
+                    top: 2.5em;
                 }
                 .ht-card:nth-child(3) {
-                    bottom: -2.5em;
+                    top: 5em;
                 }
             }
     }

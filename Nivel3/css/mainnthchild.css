@@ -12117,11 +12117,11 @@ main #download .card {
 }
 
 @media (min-width: 768px) {
-  main #download .ht-card:nth-child(1) {
-    top: -2.5em;
+  main #download .ht-card:nth-child(2) {
+    top: 2.5em;
   }
   main #download .ht-card:nth-child(3) {
-    bottom: -2.5em;
+    top: 5em;
   }
 }
 
