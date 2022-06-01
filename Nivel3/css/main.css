@@ -12175,6 +12175,14 @@ footer nav.footer-bg {
   background-color: #242946;
 }
 
+footer nav .navbar-nav .nav-item .nav-link {
+  color: #FFFFFF;
+}
+
+footer nav .navbar-nav .nav-item .nav-link:hover, footer nav .navbar-nav .nav-item .nav-link:focus {
+  color: #FA5959;
+}
+
 .was-validated .form-control:invalid {
   border-color: #FA5959;
   background-image: url("../img/icon-error.svg");

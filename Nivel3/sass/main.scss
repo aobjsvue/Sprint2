@@ -261,6 +261,17 @@ footer {
         &.footer-bg {
             background-color: #242946;
         }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: #FFFFFF;
+
+                    &:hover, &:focus {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
     }
 }
 
