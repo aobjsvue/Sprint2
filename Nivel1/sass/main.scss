@@ -89,8 +89,6 @@ header {
                 padding: 1em;
 
                 .offcanvas-body {
-                    position: relative;
-
                     .navbar-nav {
                         align-items: center;
                         letter-spacing: 2px;
@@ -133,12 +131,6 @@ header {
                             padding: 1em;
                         }
                     }
-                    .social {
-                        position: absolute;
-                        padding-bottom: 1rem;
-                        bottom: 0;
-                        left: 33vw;
-                    }
                 }
             }
         }
@@ -157,12 +149,6 @@ main {
                     color: #6c757d;
                     border-bottom: 1px solid #ced4da;
                     position: relative;
-                        
-
-                    &:hover, &:focus {
-                        color:#FA5959;
-                        border-bottom: 1px solid #ced4da;
-                    }
 
                     @include media-breakpoint-down(md) {
                         &:first-of-type {
@@ -176,7 +162,7 @@ main {
                     color: #212529;
                     background-color: none;
                     border-color: none;
-                    border-bottom: 3px solid #FA5959;
+                    border-bottom: 3px solid $secondary;
                 }
             }
         }
@@ -220,19 +206,6 @@ main {
                             color: #212529;
                             background-color: transparent;
                             box-shadow: none;
-
-                            &::after {
-                                background-image: $accordion-button-active-icon;
-                                transform: $accordion-icon-transform;
-                            }
-                        }
-
-                        &:hover {
-                            color: #FA5959;
-                        }
-
-                        &:focus {
-                            box-shadow: none;
                         }
                     }
                 }
@@ -249,33 +222,17 @@ main {
     }
 }
 
+.btn-primary {
+    color: #FFFFFF;
+    box-shadow: $box-shadow-sm;
+}
+
 .btn-secondary{
     color: #FFFFFF;
+    box-shadow: $box-shadow-sm;
+}
 
-    &:hover {
-        color: #FA5959;
-        background-color: #FFFFFF;
-    }
-
-    .btn-check:focus + &,
-    &:focus {
-        color: #FA5959;
-        background-color: #FFFFFF;
-        box-shadow: none;
-    }
-
-    .btn-check:checked + &,
-    .btn-check:active + &,
-    &:active,
-    &.active {
-        color: #FA5959;
-        background-color: #FFFFFF;
-        box-shadow: $box-shadow-sm;
-
-        &:focus {
-            color: #FA5959;
-            background-color: #FFFFFF;
-            box-shadow: $box-shadow-sm;
-        }
-    }
+.btn-light{
+    color: #FFFFFF;
+    box-shadow: $box-shadow-sm;
 }

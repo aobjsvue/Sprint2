@@ -12034,9 +12034,6 @@ header nav .offcanvas .offcanvas-header .btn-close:focus {
   header nav .offcanvas {
     padding: 1em;
   }
-  header nav .offcanvas .offcanvas-body {
-    position: relative;
-  }
   header nav .offcanvas .offcanvas-body .navbar-nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -12075,12 +12072,6 @@ header nav .offcanvas .offcanvas-header .btn-close:focus {
     margin: 2em 0;
     padding: 1em;
   }
-  header nav .offcanvas .offcanvas-body .social {
-    position: absolute;
-    padding-bottom: 1rem;
-    bottom: 0;
-    left: 33vw;
-  }
 }
 
 main #features nav .nav-tabs {
@@ -12093,11 +12084,6 @@ main #features nav .nav-tabs .nav-link {
   color: #6c757d;
   border-bottom: 1px solid #ced4da;
   position: relative;
-}
-
-main #features nav .nav-tabs .nav-link:hover, main #features nav .nav-tabs .nav-link:focus {
-  color: #FA5959;
-  border-bottom: 1px solid #ced4da;
 }
 
 @media (max-width: 767.98px) {
@@ -12151,55 +12137,26 @@ main #faqs .accordion .accordion-item .accordion-header .accordion-button:not(.c
           box-shadow: none;
 }
 
-main #faqs .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
-  background-image: url("../img/icon-arrow-active.png");
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-}
-
-main #faqs .accordion .accordion-item .accordion-header .accordion-button:hover {
-  color: #FA5959;
-}
-
-main #faqs .accordion .accordion-item .accordion-header .accordion-button:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 main #faqs .accordion .accordion-item .accordion-collapse .accordion-body {
   color: #495057;
   padding-left: 0;
   padding-right: 0;
 }
 
-.btn-secondary {
+.btn-primary {
   color: #FFFFFF;
-}
-
-.btn-secondary:hover {
-  color: #FA5959;
-  background-color: #FFFFFF;
-}
-
-.btn-check:focus + .btn-secondary, .btn-secondary:focus {
-  color: #FA5959;
-  background-color: #FFFFFF;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.btn-check:checked + .btn-secondary,
-.btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active {
-  color: #FA5959;
-  background-color: #FFFFFF;
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.175);
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.175);
 }
 
-.btn-check:checked + .btn-secondary:focus,
-.btn-check:active + .btn-secondary:focus, .btn-secondary:active:focus, .btn-secondary.active:focus {
-  color: #FA5959;
-  background-color: #FFFFFF;
+.btn-secondary {
+  color: #FFFFFF;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.175);
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.175);
+}
+
+.btn-light {
+  color: #FFFFFF;
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.175);
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.175);
 }
